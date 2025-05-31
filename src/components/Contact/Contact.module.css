@@ -1,0 +1,12 @@
+.info {
+    display: flex;
+    gap: 5px;
+    font-size: 18px;
+    flex-direction: column;
+}
+
+.btn {
+    width: 70px;
+    height: 40px;
+    cursor: pointer;
+}

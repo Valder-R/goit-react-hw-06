@@ -1,0 +1,12 @@
+import css from "./SearchBox.module.css"
+
+export default function SearchBox({filter,onFilter}) {
+    return (
+        <div>
+            <p>Find contacts by name</p>
+            <input type="text" name="filter" value={filter} onChange={(e) => {
+                onFilter(e.target.value);
+            }}/>
+        </div>
+    )
+}
