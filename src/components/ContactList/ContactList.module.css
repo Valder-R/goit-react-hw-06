@@ -1,4 +1,4 @@
-li {
+.item {
     border: 2px solid black;
     border-radius: 5px;
     padding: 10px;
@@ -7,7 +7,7 @@ li {
     align-items: center;
 }
 
-ul{
+.list{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;

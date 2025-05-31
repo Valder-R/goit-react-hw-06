@@ -8,10 +8,10 @@ export default function ContactList() {
     const filter = useSelector((state) => state.filters.name)
     const visibleContacts = contacts.filter(contact => contact.name.toLowerCase().includes(filter.toLowerCase()));
     return (
-        <ul>
+        <ul className={css.list}>
             {
                 visibleContacts.map(contact => {
-                    return (<li key={contact.id}>
+                    return (<li key={contact.id} className={css.item}>
                         <Contact contactData={contact}/>
                     </li>
                         
